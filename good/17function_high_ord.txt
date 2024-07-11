@@ -1,0 +1,44 @@
+function map(l, f)
+    return [apply f(i) for i in l];
+end
+
+function filter(l, f)
+    ret = [];
+    for i in l
+        if apply f(i)
+            ret *= [i];
+        end
+    end
+    return ret;
+end
+
+
+function fold(z,f,l)
+    for i in l
+        z = apply f(i, z);
+    end
+    return z;
+end
+
+
+# List of numbers
+numbers = [1, 2, 3, 4, 5];
+
+# Applying the map function
+squared_numbers = apply map(numbers, {x} -> {x^2});
+
+println(squared_numbers);
+
+numbers = [1, 2, 3, 4, 5];
+
+# Applying the filter function
+even_numbers = apply filter(numbers, {x} -> {x%2 == 0});
+println(even_numbers);  # Output: [2, 4]
+
+numbers = [1, 2, 3, 4, 5];
+
+# Applying the fold function with an initial value of 0
+total_sum = apply fold(0, {x,y} -> {y+x}, numbers);
+println(total_sum);  # Output: 15
+
+

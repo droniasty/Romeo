@@ -1,0 +1,23 @@
+function composition(f, g)
+    function fg(a) 
+        return apply f(apply g(a));
+    end
+    return fg;
+end
+
+function f(x) 
+    return x * 2;
+end
+
+function g(x) 
+    return x + 2;
+end
+
+fg = apply composition(f,g);
+
+gf = apply composition(g,f);
+
+y = 5;
+
+println(apply fg(y));
+println(apply gf(y));

@@ -1,0 +1,20 @@
+function fibbonacci(n)
+    a = 1;
+    b = 1;
+    for i = 1:n
+        c = a + b;
+        a = b; 
+        b = c;
+    end
+    return b;
+end
+
+fib = generator(fibbonacci);
+
+
+
+for i = 1:5
+    x = take fib;
+    println(x);
+end
+    

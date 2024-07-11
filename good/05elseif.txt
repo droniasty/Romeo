@@ -1,0 +1,25 @@
+x = 42;
+
+
+s = "ala ma ";
+
+
+if x == 44 
+    s *= "psa";
+elseif x == 42
+    s *= "kota";
+else 
+    s *= "chomika";
+end
+
+
+if True
+    println(s);
+end
+
+if x == 44
+    println("x == 44");
+else
+    println("x != 44");
+end
+

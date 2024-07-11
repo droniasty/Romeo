@@ -1,0 +1,6 @@
+str = "ab" * "cd";
+println(str); #str = ="abcd";
+str ^= 5;
+println(str); #str = "abcdabcdabcdabcdabcd";
+str = str[2:7];
+println(str); #str == "cdabcd;"

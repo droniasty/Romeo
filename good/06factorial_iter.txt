@@ -1,0 +1,19 @@
+function factorial_iterative(n)
+    result = 1;
+    for i = 1:n
+        result *= i;
+        println(result);
+    end
+    return result;
+end
+
+println(apply factorial_iterative(3));
+
+x = apply factorial_iterative(3);
+
+println(x);
+
+x = apply factorial_iterative(5);
+
+println(x);
+

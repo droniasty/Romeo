@@ -1,0 +1,2 @@
+Interpreter jest budowany poleceniem make.
+Uruchomienie odbywa się za pomocą komendy ./Interpreter/<path to file>

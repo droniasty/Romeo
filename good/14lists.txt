@@ -1,0 +1,13 @@
+amk = ["ala", "ma", "kota"];
+println(amk);
+
+d = [1 : 10];
+println(d);
+
+n = 10;
+sq = [x^2 for x in 1:n];
+println(sq);
+
+qb = [x^3 for x in d];
+println(qb);
+

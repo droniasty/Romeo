@@ -1,0 +1,16 @@
+f = {x} -> {x + 1};
+
+println(apply f(5));  # Output: 6
+
+f = {x, y} -> {x + y};
+
+println(apply f(3, 4));  # Output: 7
+
+function apply_function(f, x)
+    return apply f(x);
+end
+
+# Use an anonymous function as the argument
+result = apply apply_function({x} -> {x^3}, 2);
+
+println(result);  # Output: 8

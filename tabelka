@@ -1,0 +1,35 @@
+Język imperatywny
+Język imperatywny, najlepiej w składni opartej o C lub Javę. W przypadku braku własnych
+oryginalnych pomysłów można wzorować się na języku Latte
+https://www.mimuw.edu.pl/~ben/Zajecia/Mrj2022/Latte/
+Na 15 punktów
+1. Co najmniej trzy typy wartości: int, bool i string
+(to znaczy if 2+2 then _ parsuje się, ale wyrażenie ma niepoprawny typ).
+2. Literały, arytmetyka, porównania.
+3. Zmienne, operacja przypisania
+4. Jawne wypisywanie wartości na wyjście (instrukcja lub wbudowana procedura print).
+5. while, if (z else i bez, może być też składnia if _ elif _ else _ endif).
+6. Funkcje lub procedury (bez zagnieżdżania), rekurencja.
+Jedna rzecz z poniższej listy lub coś o porównywalnej trudności:
+7. co najmniej dwa sposoby przekazywania parametrów (przez zmienną / przez wartość / in/out),
+8. zmienne „read-only” i użycie ich np. w implementacji pętli for w stylu Pascala
+(for i = pocz to kon - wewnątrz pętli nie można zmienić wartości zmiennej sterującej,
+wartość kon liczona tylko raz - przed wejściem do pętli)
+Na 20 punktów
+J.w., a ponadto:
+9. Przesłanianie identyfikatorów ze statycznym ich wiązaniem (zmienne lokalne i globalne lub
+zagnieżdżone procedury/funkcje).
+10. Obsługa błędów wykonania, np. dzielenie przez zero (może być elegancki komunikat i
+zatrzymanie interpretera).
+11. Funkcje przyjmujące i zwracające wartość dowolnych obsługiwanych typów (tzn. nie tylko
+procedury; za to mogą być tylko funkcje – jak w języku C).
+Do 30 punktów wg cennika...
+13. Dowolnie zagnieżdżone definicje funkcji / procedur z zachowaniem poprawności statycznego
+wiązania identyfikatorów (jak w Pascalu) – 2 pkt,
+14.  coś à la listy – 1pkt,
+16. Operacje przerywające pętlę while - break i continue – 1pkt,
+17. Funkcje jako parametry,
+zwracanie funkcji w wyniku, domknięcia à la JavaScript.
+funkcje anonimowe – 4pkt,
+18. Procedury generujące i składnia do ich używania (np. jak w Pythonie - instrukcja yield oraz
+next, a także for x in generator(...) ) – 3pkt.

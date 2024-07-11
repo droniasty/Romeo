@@ -1,0 +1,18 @@
+function make_multiplier(factor)
+    # Define the closure
+    function multiplier(x)
+        return x * factor;
+    end
+    # Return the closure
+    return multiplier;
+end
+
+# Create a multiplier function that multiplies by 3
+times_three = apply make_multiplier(3);
+
+# Create a multiplier function that multiplies by 5
+times_five = apply make_multiplier(5);
+
+# Test the closures
+println(apply times_three(4));  # Output: 12
+println(apply times_five(4));   # Output: 20

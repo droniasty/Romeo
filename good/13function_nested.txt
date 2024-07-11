@@ -1,0 +1,16 @@
+function outer_function(x)
+    println("Inside outer_function");
+
+    # Define a nested function
+    function inner_function(y)
+        println("Inside inner_function");
+        return y + 1;
+    end
+
+    # Call the nested function
+    result = apply inner_function(x);
+    return result;
+end
+
+# Call the outer function
+println(apply outer_function(5));

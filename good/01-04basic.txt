@@ -1,0 +1,9 @@
+a = 5;
+b = True;
+s = "ala ma kota";
+
+println(5);
+
+println(a);
+println(b);
+println(s);

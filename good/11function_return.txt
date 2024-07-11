@@ -1,0 +1,11 @@
+function mul(x, y)
+    return x * y;
+end 
+
+k = apply mul("ala ma ", "kota");
+p = apply mul("ala ma ", "psa");
+r = apply mul(3, 5);
+
+println(k);
+println(p);
+println(r);
