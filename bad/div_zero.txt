@@ -1,0 +1,6 @@
+x = 5;
+y = 0;
+println(x);
+println(y);
+z = x / y;
+println(z);

@@ -1,0 +1,4 @@
+x = "ala";
+y "ma kota";
+z = x + y;
+println(z);
